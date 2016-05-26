@@ -1,0 +1,4 @@
+build/
+ObjectTracker
+.DS_Store
+*.class
