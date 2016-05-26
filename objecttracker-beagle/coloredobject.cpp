@@ -115,7 +115,8 @@ int ColoredObject::chooseContour(vector<vector<Point>>* contours)
 		int area = contourArea((*contours)[i]);
 		if (area > largest[1])
 		{
-			largest = {i, area};
+			largest[0] = i;
+			largest[1] = area;
 		}
 	}
 	return largest[0];
